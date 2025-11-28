@@ -1,0 +1,40 @@
+ body {
+     background-color: #1e1e2e;
+     color: #cdd6f4;
+     font-family: 'Courier New', Courier, monospace;
+     padding: 20px;
+ }
+
+ .container {
+     max-width: 900px;
+     margin: 0 auto;
+ }
+
+ .card {
+     background: #313244;
+     padding: 20px;
+     border-radius: 10px;
+     margin-bottom: 20px;
+     border: 1px solid #45475a;
+ }
+
+ h1 {
+     color: #89b4fa;
+     border-bottom: 2px solid #89b4fa;
+     display: inline-block;
+ }
+
+ .status-box {
+     display: flex;
+     gap: 20px;
+     margin-bottom: 20px;
+ }
+
+ .metric {
+     font-size: 1.2rem;
+ }
+
+ span.highlight {
+     color: #a6e3a1;
+     font-weight: bold;
+ }

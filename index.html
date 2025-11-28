@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetWatch | Server Telemetry</title>
+    
+    <script src="https://cdn.socket.io/4.6.0/socket.io.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>NETWATCH MONITORING</h1>
+    <p>Network Programming Final Project</p>
+
+    <div class="card">
+        <h3>Server Information (Fetched via API)</h3>
+        <div id="server-info">Waiting for API data...</div>
+    </div>
+
+    <div class="status-box">
+        <div class="card metric" style="flex:1">
+            Live CPU: <span id="cpu-val" class="highlight">0%</span>
+        </div>
+        <div class="card metric" style="flex:1">
+            Live RAM: <span id="ram-val" class="highlight">0%</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <canvas id="liveChart"></canvas>
+    </div>
+    
+    <p style="font-size: 0.8rem; color: #6c7086;">Connection Status: <span id="conn-status" style="color:red">Disconnected</span></p>
+</div>
+
+<script src="/scripts/main.js"></script>
+
+</body>
+</html>
